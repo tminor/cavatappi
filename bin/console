@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require_relative '../config/boot'
+require_relative '../config/application'
+require 'pry'
+require 'pry-stack_explorer'
+
+Noodle::Application.finalize!
+
+binding.pry
